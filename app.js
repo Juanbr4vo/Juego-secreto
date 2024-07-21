@@ -23,7 +23,7 @@ function verificarIntento() {
         limpiarCaja();
     } else {
         if (numeroDeUsuario == numeroSecreto) {
-            asignarTextoElemento('parrafo', `¡Acertaste el número en ${intentos} ${(intentos === 1) ? 'vez' : 'veces'}!`);
+            asignarTextoElemento('parrafo', `¡Acertaste el número en ${intentos} ${(intentos === 1) ? 'intento' : 'intentos'}!`);
             document.getElementById('intento').setAttribute('disabled', 'true');
             document.getElementById('reiniciar').removeAttribute('disabled');
             cantidadDeJuegos++;
