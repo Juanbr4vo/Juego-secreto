@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="es-col">
 
 <head>
     <meta charset="UTF-8">
@@ -13,29 +13,26 @@
     <title>JS Game</title>
 </head>
 
-<body>
-
+<body class="contenido__body">
     <div class="container">
+        <div>
+            <img class="container__imagen-robot" src="./img/robot.png" alt="Imagen de un robot pequeño" />
+        </div>
         <div class="container__contenido">
             <div class="container__informaciones">
                 <div class="container__texto">
                     <h1 id="titulo"></h1>
-                    <p id="parrafo"class="texto__parrafo"></p>   
+                    <p id="parrafo" class="texto__parrafo"></p>
                 </div>
                 <input type="number" id="valorUsuario" min="1" max="10" class="container__input">
                 <div class="chute container__botones">
                     <button onclick="verificarIntento();" class="container__boton" id="intento">Intentar</button>
-                    <button onclick="reiniciarJuego();" class="container__boton" id="reiniciar" disabled>Nuevo
-                        juego</button>
+                    <button onclick="reiniciarJuego();" class="container__boton" id="reiniciar" disabled>Nuevo juego</button>
                 </div>
             </div>
             <img src="./img/ia.png" alt="Una persona mirando a la izquierda" class="container__imagen-persona" />
         </div>
     </div>
-
-
-
-
     <script src="app.js"></script>
 </body>
 
